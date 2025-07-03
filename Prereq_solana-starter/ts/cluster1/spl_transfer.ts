@@ -10,10 +10,17 @@ const commitment: Commitment = "confirmed";
 const connection = new Connection("https://api.devnet.solana.com", commitment);
 
 // Mint address
+<<<<<<< HEAD
 const mint = new PublicKey("AaS3mQPS6sScGtJ8ABxvg4vcyWkG1pMtt5y2Uu1BcYuv");
 
 // Recipient address
 const to = new PublicKey("FVdLp9jrbstgPZDqqWuNbSEKURxigGkigFBRmnCAAksh");
+=======
+const mint = new PublicKey("3cZSGM6J8Fuu7RFWWoJDjd7dmr6cWoKHfLoNQ6deAM9d");
+
+// Recipient address
+const to = new PublicKey("DwUkSRrMWtcxsqVEJk7coMwpRVXDdxS2mxBPjMMgN1pY");
+>>>>>>> 35f44b2 (rug day)
 
 (async () => {
     try {
@@ -40,7 +47,11 @@ const to = new PublicKey("FVdLp9jrbstgPZDqqWuNbSEKURxigGkigFBRmnCAAksh");
             fromWallet.address,
             toWallet.address,
             keypair,
+<<<<<<< HEAD
             100000
+=======
+            10000000
+>>>>>>> 35f44b2 (rug day)
         )
         console.log("Transaction Signature:", toTokenAccount);
     } catch(e) {
